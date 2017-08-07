@@ -7,7 +7,12 @@ html(lang='en')
     // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
     meta(name='description', content='')
     meta(name='author', content='')
-    link(rel='icon', href='/favicon.ico')
+
+    // Favicon
+    each size in [ 16, 32, 57, 60, 72, 76, 96, 114, 120, 144, 152, 180, 192 ]
+      link(rel='icon', type='image/png', sizes=`${size}x${size}`, href=`/images/logo.${size}.png`)
+      link(rel='apple-touch-icon', sizes=`${size}x${size}`, href=`/images/logo.${size}.png`)
+
     title Marathon App Dashboard (MAD)
     // Bootstrap core CSS
     link(href='/stylesheets/bootstrap.css', rel='stylesheet')
@@ -28,7 +33,7 @@ html(lang='en')
               a(href='/') Home
             li(role='presentation')
               a(href='mailto:honghao@factual.com') Contact
-        h3.text-muted MAD
+        img.logo(src="/images/logo.120.png")
 
       block content
 
