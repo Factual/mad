@@ -1,5 +1,5 @@
 <p align="center">
-  ![Logo](public/images/banner.png)
+  ![Logo](images/banner.png)
 </p>
 M.A.D (Mesos Application Dashboard) is a dashboard which shows CPU / Memory / Network usage and STDOUT / STDERR for a mesos application.
 
